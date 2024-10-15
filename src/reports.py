@@ -13,6 +13,7 @@ logger = setting_log("reports")
 
 
 def save_to_file_decorator(filename: str = "log_file.json"):
+    """Функция декоратор"""
     def decorator(func: Callable) -> Callable:
         @wraps(func)
         def wrapper(*args, **kwargs) -> Any:
